@@ -1,0 +1,32 @@
+[package]
+name = "auth_rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+axum = { version = "^0.7.2", features = ['query', 'macros'] }
+axum-macros = "^0.4.0"
+base64 = "0.21.5"
+chrono = "0.4.31"
+derive_more = "0.99.17"
+dotenvy = "0.15.7"
+hmac = "0.12.1"
+jwt = "0.16.0"
+lazy_static = "1.4.0"
+mockall = "0.12.1"
+rand = "0.8.5"
+regex = "1.10.2"
+argon2 = "0.5.2"
+sendgrid = { version = "0.19.2", features = ["async"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.86"
+sha2 = "0.10.8"
+sqlx = { version = "0.7", features = [ "chrono", "runtime-tokio", "tls-rustls", "sqlite" ] }
+structx = "0.1.10"
+thiserror = "1.0.50"
+tower-cookies = "0.10.0"
+tokio = { version = "1.29.1", features = ["full"] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }

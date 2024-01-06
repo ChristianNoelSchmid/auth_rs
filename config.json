@@ -1,0 +1,12 @@
+{
+    "auth_service_settings": {
+        "issuer": "https://christianssoftware.com",
+        "audience": "https://christianssoftware.com",
+        "refr_token_lifetime": "30.00:00:00",
+        "access_token_lifetime": "0.00:05:00"
+    },
+    "send_email_service_settings": {
+        "base_url": "http://localhost:3000",
+        "from_email_addr": "chris@christianssoftware.com"
+    }
+}
